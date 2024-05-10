@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% load markdown_filters %}
+
+{% block title %}
+    Ai Location Suggestion
+{% endblock title %}
+
+{% block style %}   
+{% endblock style %}
+{% block content %}
+<h3>Nearby Location Suggestion </h3>
+{{ response|markdown_to_html }} 
+{% endblock content %}

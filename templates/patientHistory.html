@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+Patient History
+{% endblock title %}
+{% block style %}
+<style>
+    h2 {
+        /* margin-top: 90px; */
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+</style>
+{% endblock style %}
+
+{% block content %}
+<h2>Patient History</h2>
+<p>Name : {{patientName}}</p>
+<p>Email : {{patientEmail}}</p>
+<p>UserName : {{patientUsername}}</p>
+
+<br><br><br>
+
+<h3> Past Records </h3><br>
+<table>
+    <tr>
+        <th> Date </th>
+        <th> Patient_username </th>
+        <th> Disease </th>
+        <th>Report</th>
+    </tr>
+    {% for record in records %}
+    <tr>
+        <td> {{record.date}} </td>
+        <td> {{record.username}} </td>
+        <td> {{record.disease}} </td>
+        <td>
+            <form action="{% url 'historyReport' %}" method="get">
+                <input type="hidden" name="report" value="{{record.id}}">
+                <input type="submit" value="View-Report">
+            </form>
+            <!-- <a href="{% url 'historyReport' %}">View Report</a> </td> -->
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock content %}

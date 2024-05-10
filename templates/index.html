@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% load markdown_filters %}
+
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'index.css' %}">
+{% endblock style %}
+{% block title %}
+Disease Prediction
+{% endblock title %}
+{% block content %}
+<div>
+  <h2>Enter the details of the patient</h2>
+
+  <div class="suggest">
+    <p>Suggested Common Symptom :{{ suggestion|markdown_to_html }}</p>
+  </div>
+  <p>User Symptoms choices:
+    {% for i in user_Symptoms %}
+    {{ i }},
+    {% endfor %}
+  </p>
+
+  <form action="{% url 'addDiseaseData' %}" method="get">
+    <div class="input-group">
+      <select name="symptom" class="custom-select" id="inputGroupSelect04">
+        {% for symptom in symptoms %}
+        <option value="{{ symptom }}">{{ symptom }}</option>
+        {% endfor %}
+      </select>
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="submit">Add Symptoms</button>
+      </div>
+    </div>
+
+  </form>
+
+  <form action="{% url 'voiceSearch' %}" method="get">
+    <div class="input-group">
+      <input type="text" class="form-control" name="voice-input" id="voice-input">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="voice-button">Voice Search</button>
+        <button class="btn btn-outline-secondary" type="submit">Add Symptoms</button>
+      </div>
+    </div>
+    {% comment %} <input type="text" name="voice-input" id="voice-input">
+
+    <button class="btn btn-primary" type="button" id="voice-button"> Voice Search</button>
+    </button>
+    <button class="btn btn-primary" type="submit">Add Symptom</button> {% endcomment %}
+
+  </form>
+
+  <form action="{% url 'submitAndPredict' %}" method="post">
+    {% csrf_token %}
+    <div class="form-row">
+      <div class="col-md-4 mb-3">
+        <label for="validationCustomUsername">Username</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+          </div>
+          <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" name="Name"
+            id="Name" aria-describedby="inputGroupPrepend" name="username" required>
+          <input type="hidden" name="Disease" value="{{user_Symptoms}}">
+
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-info">Predict</button>
+    {% comment %} <div class="input-group mb-3">
+      <input type="text" name="Name" id="Name" class="form-control" placeholder="Patient's username"
+        aria-label="Patient's username" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="submit">Predict</button>
+      </div>
+    </div> {% endcomment %}
+  </form>
+  <br>
+  <a href="{% url 'AIchatBot' %}"><button class="btn btn-outline-primary" type="button">Chat With AI Health
+      Assistant</button>
+  </a>
+</div>
+<script src="{% static 'js/index.js' %}"></script>
+{% endblock content %}

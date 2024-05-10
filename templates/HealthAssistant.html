@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load markdown_filters %}
+
+{% load static %}
+{% block title %}
+Health Assistant
+{% endblock title %}
+{% block style %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link rel="stylesheet" href="{% static 'Aibot.css' %}">
+
+{% endblock style %}
+{% block content %}
+<div class="contentt">
+    <div>
+        <div class="chat-message">
+            <div class="chat-message-content">
+                <p><img class="logorep" src="{% static 'image/chatbot.jpeg' %}" alt="logorep">
+                    Welcome to the Medical Chatbot health assistance. I'm here to provide assistance with any
+                    health-related inquiries you may have. Please feel free to ask me about symptoms, conditions,
+                    treatments, medications, or any other medical concerns you may have.</p>
+            </div>
+        </div>
+    </div>
+    <div class="chat-reply">
+        <p><img class="logorep" src="{% static 'image/user.jpeg' %}" alt="logorep">{{Question}}</p>
+        <img class="logorep" src="{% static 'image/chatbot.jpeg' %}" alt="logorep">{{ Answer|markdown_to_html }}
+        {% comment %} <p> {{Answer}}</p> {% endcomment %}
+    </div>
+</div>
+<div class="chat-input">
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="input-group">
+            <input type="text" name="user-input" id="user-input" class="form-control"
+                placeholder="Describe Your Problems" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <input type="hidden" name="voice-input" id="voice-input">
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="submit">Send</button>
+                <button class="btn btn-outline-secondary" id="voice-button" type="button"><i
+                        class="fas fa-microphone"></i> Voice Search</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="{% static 'js/chatbot.js' %}"></script>
+{% endblock content %}
+
+

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+Appointment
+{% endblock title %}
+{% block style %}
+<style>
+    h3{
+        text-align: center;
+        {% comment %} color: #333;
+        font-size: 30px;
+        margin-top: 20px; {% endcomment %}
+    }
+    p{
+        text-align:left;
+         {% comment %} color: #333; {% endcomment %}
+        font-size: 15px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+{% endblock style %}
+{% block content %} 
+<h3>Book Appointment<h3>
+<p>Hospital Name : {{hospitalname}}</p>
+<p>Contact Information : {{contact_information}}</p>
+<p>Location : {{location}}</p>
+<p>Doctors and specialists : {{doctors_and_specialists}}</p>
+<p>Treatment options : {{treatment_options}}</p>
+<p>Facilities and Amenities : {{facilities_and_amenities}}</p>
+<p>Fee : Rs.1000</p>
+<button type="button" class="btn btn-outline-info">Confirm Appointment</button>
+{% endblock content %}

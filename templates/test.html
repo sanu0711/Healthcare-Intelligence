@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map</title>
+    <style>
+        #map { height: 400px; }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+<body>
+    <h1>Map</h1>
+
+    <!-- Map Container -->
+    <div id="map"></div>
+
+    <!-- Search Form -->
+    <form action="#" onsubmit="searchLocation(); return false;">
+        <input type="text" id="locationInput" placeholder="Enter location">
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Buttons for Current Location and Custom Search -->
+    <button onclick="getCurrentLocation()">Show My Location</button>
+
+    <script>
+        var map = L.map('map').setView([51.505, -0.09], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        function getCurrentLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var lat = position.coords.latitude;
+                    var lng = position.coords.longitude;
+                    L.marker([lat, lng]).addTo(map).bindPopup('You are here').openPopup();
+                });
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function searchLocation() {
+            var input = document.getElementById('locationInput').value;
+            // Use input to search location via API or geocoding service
+            // Example: You can use Leaflet plugins like Leaflet Control Geocoder
+        }
+    </script>
+</body>
+</html>

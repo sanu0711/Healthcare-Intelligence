@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+Patient History
+{% endblock title %}
+{% block style %}
+<!-- Add Leaflet.js to your HTML template -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<style>
+    #map {
+        height: 300px;
+        width: 70%;
+    }
+
+    h2 {
+        /* margin-top: 90px; */
+        text-align: center;
+    }
+
+    .textDesign {
+        font-weight: bold;
+    }
+
+    .sign {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 50px;
+    }
+
+    .sign1 {
+        margin-top: 50px;
+    }
+    table {
+        font-family: Arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        color:white;
+        }
+</style>
+{% endblock style %}
+
+{% block content %}
+<div class="topmargin">
+
+    <h2>Report Of patient</h2>
+    <p>Name of patient : {{ Name }}</p><br>
+    <p>Email of patient : {{ Email }}</p><br>
+    <p>Date : {{ Date}}</p><br>
+    <p>User Symptoms : {{ symptoms }} </p><br>
+    <p>Predicted Disease : {{ prediction }}</p><br>
+    <p class="textDesign">Disease Discription </p>
+    <p>{{ discription }}</p><br>
+
+    <p class="textDesign">Disease Precaution</p>
+    <p>{{ precaution }}</p><br>
+
+    <br>
+    <p class="textDesign">Medicine</p>
+    <p>{{medicine}} </p>
+</div>
+<a href="https://www.1mg.com/?wpsrc=Bing+Organic+Search"><button type="button" class="btn btn-secondary btn-sm">Buy
+        Medicine</button></a>
+
+
+<br>
+
+<br>
+<br>
+
+<form action="{% url 'AiLocation' %}" method="get">
+    <input type="hidden" name="disease" value={{prediction}}>
+    <button type="submit" class="btn btn-outline-primary">Near By Hospitals and Details</button>
+</form>
+
+
+<div class="sign">
+    <div class="sign1">
+        <p>Doctor Signature</p>
+        <p class="textDesign">Dr. Abhishek Yadav</p><br>
+        <br>
+    </div>
+</div>
+
+
+<table>
+    <tr>
+        <th>Doctor Name</th>
+        <th>Specialization</th>
+        <th>Location</th>
+        <th>Consultation Fee</th>
+        <th>Book Appointment</th>
+    </tr>
+    <tr>
+        <td>Dr. Abhishek Yadav</td>
+        <td>General Physician</td>
+        <td>Lucknow</td>
+        <td>Rs. 1000</td>
+        <td><a href="{% url 'appointment' %}"><button class="btn btn-outline-primary" type="button">Book Appointment</button></a></td>
+    </tr>
+    <tr>
+        <td>Dr. Sanu Yadav</td>
+        <td>Cardiologist</td>
+        <td>Delhi</td>
+        <td>Rs. 1000</td>
+        <td><a href="{% url 'appointment' %}"><button class="btn btn-outline-primary" type="button">Book Appointment</button></a></td>
+    </tr>
+</table>
+<br><br>
+<!-- Map Container -->
+<h3>Location For Health Help</h3>
+<!-- Map Container -->
+<div class="input-group">
+    <input type="text" class="form-control" placeholder="Search Loaction of Hospitals"
+        aria-label="Search Loaction of Hospitals" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button">Search</button>
+        <button class="btn btn-outline-secondary" type="button" onclick="getCurrentLocation()">Current Location</button>
+    </div>
+</div>
+<br><br>
+{% comment %} <button onclick="getCurrentLocation()">Show My Location</button>
+<form action="#" onsubmit="searchLocation(); return false;">
+    <input type="text" id="locationInput" placeholder="Enter location">
+    <button type="submit">Search</button>
+</form> {% endcomment %}
+<div id="map"></div>
+
+<!-- Search Form -->
+
+
+<!-- Buttons for Current Location and Custom Search -->
+
+<script>
+    var map = L.map('map').setView([51.505, -0.09], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    function getCurrentLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                var lat = position.coords.latitude;
+                var lng = position.coords.longitude;
+                L.marker([lat, lng]).addTo(map).bindPopup('You are here').openPopup();
+            });
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+
+    function searchLocation() {
+        var input = document.getElementById('locationInput').value;
+        // Use input to search location via API or geocoding service
+        // Example: You can use Leaflet plugins like Leaflet Control Geocoder
+    }
+</script>
+{% endblock content %}
