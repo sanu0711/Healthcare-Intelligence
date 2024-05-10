@@ -1,0 +1,44 @@
+Disease,Hospital Name,Location,Contact Information,Specialties,Doctors and Specialists,Treatment Options,Facilities and Amenities
+Fungal infection,Hospital A,City A,123-456-7890,Dermatology, Infectious Diseases,Dr. Smith, Dr. Johnson,Antifungal medications, Topical treatments,MRI, Laboratory, Pharmacy
+Allergy,Hospital B,City B,987-654-3210,Allergy & Immunology, Pulmonology,Dr. Brown, Dr. Lee,Allergen avoidance, Immunotherapy,Allergy testing center, Respiratory therapy
+GERD,Hospital C,City C,456-789-0123,Gastroenterology, Internal Medicine,Dr. Garcia, Dr. Patel,Medication, Endoscopy, Surgery,Endoscopy unit, Intensive care unit
+Chronic cholestasis,Hospital D,City D,321-654-0987,Hepatology, Infectious Diseases,Dr. Nguyen, Dr. Wang,Antiviral medications, Liver transplant,Transplant center, Liver clinic
+Drug Reaction,Hospital E,City E,789-012-3456,Cardiology, Neurology,Dr. Jones, Dr. Kim,Medication, Lifestyle modification, Surgery,Cardiac catheterization lab, Neurological rehabilitation center
+Peptic ulcer diseae,Hospital F,City F,210-987-6543,Endocrinology, Internal Medicine,Dr. Martinez, Dr. Chang,Insulin therapy, Medication, Dietary management,Diabetes education center, Laboratory
+AIDS,Hospital G,City G,543-210-9876,Infectious Diseases, Internal Medicine,Dr. Kumar, Dr. Li,Antibiotics, Antiretroviral therapy, Supportive care,Infectious disease isolation unit, Counseling services
+Diabetes ,Hospital H,City H,876-543-2109,Pulmonology, Internal Medicine,Dr. Thompson, Dr. Wang,Inhalers, Corticosteroids, Oxygen therapy,Pulmonary function testing lab, Respiratory therapy
+Gastroenteritis,Hospital I,City I,234-567-8901,Neurology, Physical Medicine and Rehabilitation,Dr. Wilson, Dr. Chen,Physical therapy, Occupational therapy, Medication,Rehabilitation gym, Neurological rehabilitation center
+Bronchial Asthma,Hospital J,City J,678-901-2345,Gastroenterology, Hepatology,Dr. Rodriguez, Dr. Gupta,Medication, Endoscopy, Liver transplant,Endoscopy unit, Transplant center
+Hypertension ,Hospital K,City K,901-234-5678,Rheumatology, Orthopedics,Dr. Park, Dr. Nguyen,Medication, Physical therapy, Joint injections,Rheumatology clinic, Orthopedic surgery center
+Migraine,Hospital L,City L,345-678-9012,Orthopedics, Sports Medicine,Dr. White, Dr. Kim,Physical therapy, Surgery, Medication,Sports medicine clinic, Orthopedic surgery center
+Cervical spondylosis,Hospital M,City M,789-012-3456,Dermatology, Cosmetic Surgery,Dr. Patel, Dr. Garcia,Topical treatments, Laser therapy, Surgery,Dermatology clinic, Cosmetic surgery center
+Paralysis (brain hemorrhage),Hospital N,City N,210-987-6543,Nephrology, Urology,Dr. Lee, Dr. Martinez,Dialysis, Medication, Surgery,Kidney transplant center, Urology clinic
+Jaundice,Hospital O,City O,543-210-9876,Hematology, Oncology,Dr. Wang, Dr. Kumar,Chemotherapy, Radiation therapy, Bone marrow transplant,Oncology center, Infusion center
+Malaria,Hospital P,City P,876-543-2109,Psychiatry, Behavioral Health,Dr. Johnson, Dr. Thompson,Psychotherapy, Medication management, Group therapy,Psychiatric hospitalization unit, Counseling services
+Chicken pox,Hospital Q,City Q,234-567-8901,Dermatology, Plastic Surgery,Dr. Chen, Dr. Wilson,Topical treatments, Cosmetic procedures, Surgery,Dermatology clinic, Plastic surgery center
+Dengue,Hospital R,City R,678-901-2345,Neurology, Psychiatry,Dr. Gupta, Dr. Rodriguez,Medication, Psychotherapy, Brain stimulation therapies,Neurology clinic, Psychiatry clinic
+Typhoid,Hospital S,City S,901-234-5678,Orthopedics, Physical Therapy,Dr. Nguyen, Dr. Park,Physical therapy, Surgery, Medication,Orthopedic surgery center, Rehabilitation gym
+hepatitis A,Hospital T,City T,345-678-9012,Ophthalmology, Optometry,Dr. Kim, Dr. White,Eye exams, Glasses, Contact lenses, Lasik surgery,Eye clinic, Optical shop
+Hepatitis B,Hospital U,City U,789-012-3456,Obstetrics, Gynecology,Dr. Garcia, Dr. Patel,Prenatal care, Labor and delivery services, Gynecological surgery,Obstetrics unit, Women's health clinic
+Hepatitis C,Hospital V,City V,210-987-6543,Cardiology, Cardiothoracic Surgery,Dr. Brown, Dr. Lee,Medication, Cardiac catheterization, Heart surgery,Cardiac catheterization lab, Cardiac surgery center
+Hepatitis D,Hospital W,City W,543-210-9876,Oncology, Radiation Oncology,Dr. Martinez, Dr. Johnson,Chemotherapy, Radiation therapy, Immunotherapy,Oncology center, Radiation therapy center
+Hepatitis E,Hospital X,City X,876-543-2109,Pulmonology, Sleep Medicine,Dr. Thompson, Dr. Wang,CPAP therapy, Medication, Lifestyle modification,Sleep study center, Respiratory therapy
+Alcoholic hepatitis,Hospital Y,City Y,234-567-8901,Pediatrics, Pediatric Surgery,Dr. Wilson, Dr. Chen,Medication, Surgery, Pediatric subspecialty care,Pediatric clinic, Pediatric surgery center
+Tuberculosis,Hospital Z,City Z,678-901-2345,ENT (Otolaryngology), Head and Neck Surgery,Dr. Gupta, Dr. Rodriguez,Medication, Surgery, Diagnostic procedures,ENT clinic, Head and neck surgery center
+Common Cold,Hospital A,City A,123-456-7890,Dermatology, Infectious Diseases,Dr. Smith, Dr. Johnson,Antifungal medications, Topical treatments,MRI, Laboratory, Pharmacy
+Pneumonia,Hospital B,City B,987-654-3210,Allergy & Immunology, Pulmonology,Dr. Brown, Dr. Lee,Allergen avoidance, Immunotherapy,Allergy testing center, Respiratory therapy
+Dimorphic hemmorhoids(piles),Hospital C,City C,456-789-0123,Gastroenterology, Internal Medicine,Dr. Garcia, Dr. Patel,Medication, Endoscopy,
+Disease,Hospital Name,Location,Contact Information,Specialties,Doctors and Specialists,Treatment Options,Facilities and Amenities
+Heart attack,Hospital D,City D,321-654-0987,Cardiology, Emergency Medicine,Dr. Nguyen, Dr. Wang,Medication, Angioplasty, Bypass surgery,Cardiac catheterization lab, Emergency department
+Varicose veins,Hospital E,City E,789-012-3456,Cardiology, Vascular Surgery,Dr. Jones, Dr. Kim,Compression stockings, Sclerotherapy, Vein surgery,Cardiac catheterization lab, Vascular surgery center
+Hypothyroidism,Hospital F,City F,210-987-6543,Endocrinology, Internal Medicine,Dr. Martinez, Dr. Chang,Thyroid hormone replacement, Medication management, Dietary counseling,Endocrinology clinic, Laboratory
+Hyperthyroidism,Hospital G,City G,543-210-9876,Endocrinology, Internal Medicine,Dr. Kumar, Dr. Li,Anti-thyroid medications, Radioactive iodine therapy, Surgery,Endocrinology clinic, Thyroid clinic
+Hypoglycemia,Hospital H,City H,876-543-2109,Endocrinology, Internal Medicine,Dr. Thompson, Dr. Wang,Glucose monitoring, Diet modification, Medication adjustment,Endocrinology clinic, Laboratory
+Osteoarthristis,Hospital I,City I,234-567-8901,Orthopedics, Physical Therapy,Dr. Wilson, Dr. Chen,Physical therapy, Medication, Joint injections,Orthopedic clinic, Rehabilitation gym
+Arthritis,Hospital J,City J,678-901-2345,Rheumatology, Orthopedics,Dr. Rodriguez, Dr. Gupta,Medication, Physical therapy, Joint injections,Rheumatology clinic, Orthopedic surgery center
+(vertigo) Paroymsal  Positional Vertigo,Hospital K,City K,901-234-5678,Neurology, Otolaryngology,Dr. Park, Dr. Nguyen,Medication, Vestibular rehabilitation, Canalith repositioning procedure,Neurology clinic, Otolaryngology clinic
+Acne,Hospital L,City L,345-678-9012,Dermatology, Cosmetic Surgery,Dr. White, Dr. Kim,Topical treatments, Oral medications, Laser therapy,Dermatology clinic, Cosmetic surgery center
+Urinary tract infection,Hospital M,City M,789-012-3456,Urology, Internal Medicine,Dr. Patel, Dr. Garcia,Antibiotics, Urinary analgesics, Hygiene measures,Urology clinic, Laboratory
+Psoriasis,Hospital N,City N,210-987-6543,Dermatology, Rheumatology,Dr. Lee, Dr. Martinez,Topical treatments, Phototherapy, Systemic medications,Dermatology clinic, Rheumatology clinic
+Impetigo,Hospital O,City O,543-210-9876,Dermatology, Infectious Diseases,Dr. Wang, Dr. Kumar,Topical antibiotics, Oral antibiotics, Wound care,Dermatology clinic, Infectious disease clinic
+
