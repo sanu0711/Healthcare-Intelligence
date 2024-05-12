@@ -29,9 +29,9 @@ The following machine learning algorithms were utilized for disease prediction:
 - **AI Health Assistant (ChatBot) : ** The AI Health Assistant provides tailored health guidance and information, harnessing cutting-edge AI models and advanced NLP techniques. Users can explore health tips, uncover causes, symptoms, and precautions, discover home remedies, receive medication guidance, and locate nearby hospitals.
 
 
-## Demonstration 
+## Video Demonstration
 
-Check out the live demo video [here](https://drive.google.com/file/d/16K1JiLaTD3yXR6Of9N0_LGte7en9_Mp8/view?usp=sharing). 
+[![Watch the video](https://img.youtube.com/vi/6AW9Wzpxbzg/0.jpg)](https://www.youtube.com/watch?v=6AW9Wzpxbzg)
 
 ## Installation
 
