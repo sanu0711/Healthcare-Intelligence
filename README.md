@@ -31,7 +31,7 @@ The following machine learning algorithms were utilized for disease prediction:
 
 ## Demonstration 
 
-Check out the live demo [here](insert_demo_link_here). 
+Check out the live demo video [here](https://drive.google.com/file/d/16K1JiLaTD3yXR6Of9N0_LGte7en9_Mp8/view?usp=sharing). 
 
 ## Installation
 
