@@ -1,0 +1,31 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color:#fff;
+    background-color: #000;
+}
+.navfix{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    height:fit-content;
+    background-color: #000;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+.ff{
+    background-color: #000;
+    color: #fff;
+    /* margin-top: 100px; */
+    padding-top: 100px;
+    margin: 20px;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+

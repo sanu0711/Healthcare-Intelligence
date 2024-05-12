@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color:#fff;
+    background-color: #000;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    /* margin-top: 20px; */
+
+}
+.result {
+    margin: 20px auto;
+    text-align: left;
+    padding: 20px;
+    border-radius: 5px;
+}
+.sign{
+    color: #fff;
+    width: 100%;
+    /* margin-left: 60%; */
+    width:100%;
+}
+.sign1{
+    color: #fff;
+    /* background-color: #a44e4e; */
+    text-align: right;
+    /* margin-left: -20px; */
+    margin-right: 20px;
+}
+
+.textDesign{
+    font-weight: bold;
+   
+}
