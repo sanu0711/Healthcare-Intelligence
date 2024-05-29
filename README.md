@@ -26,7 +26,7 @@ The following machine learning algorithms were utilized for disease prediction:
 - **Django Integration:** Implemented using Django framework, incorporating various features such as dynamic input chatbox, voice search, and location integration.
 - **User-Friendly Interface:** Intuitive user interface with interactive features for seamless user experience.
 
-- **AI Health Assistant (ChatBot) : ** The AI Health Assistant provides tailored health guidance and information, harnessing cutting-edge AI models and advanced NLP techniques. Users can explore health tips, uncover causes, symptoms, and precautions, discover home remedies, receive medication guidance, and locate nearby hospitals.
+- **AI Health Assistant (ChatBot) :** The AI Health Assistant provides tailored health guidance and information, harnessing cutting-edge AI models and advanced NLP techniques. Users can explore health tips, uncover causes, symptoms, and precautions, discover home remedies, receive medication guidance, and locate nearby hospitals.
 
 
 ## Video Demonstration
